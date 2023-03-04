@@ -12,5 +12,7 @@
             "email": "alex-p14@bk.ru"
         }
     ],
+    "description": "hexlet code",
+    "license": "proprietary",
     "require": {}
 }
