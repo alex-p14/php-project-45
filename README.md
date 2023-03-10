@@ -5,4 +5,4 @@
 
 ### *Asciinema:*
 * _brain-even_ :
- [![asciicast](https://asciinema.org/a/5Yhs0FzMZuZQkyKPzdQ0Wf37t.svg)](https://asciinema.org/a/5Yhs0FzMZuZQkyKPzdQ0Wf37t)
+[![asciicast](https://asciinema.org/a/5Yhs0FzMZuZQkyKPzdQ0Wf37t.svg)](https://asciinema.org/a/5Yhs0FzMZuZQkyKPzdQ0Wf37t)
