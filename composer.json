@@ -3,17 +3,19 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-	"bin/brain-calc"
+	    "bin/brain-calc",
+	    "bin/brain-gcd"
     ],
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         },
 	"files": [
-            "src/Cli.php",
+        "src/Cli.php",
 	    "src/Engine.php",
 	    "src/Games/even.php",
-	    "src/Games/calc.php"
+	    "src/Games/calc.php",
+	    "src/Games/Gcd.php"
 	]
     },
     "authors": [
