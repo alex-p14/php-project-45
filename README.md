@@ -11,18 +11,18 @@
 * ___Composer 2.5.4 or never___
 
 ### *Setup:*
-* _Clone repository_
-> git clone git@github.com:alex-p14/php-project-45.git
-* _Go to directory_
-> cd php-project-45
-* _Install package_
-> composer install
-* _Run game_
-> * _make brain-even_
-> * _make brain-calc_
-> * _make brain-gcd_
-> * _make brain-progression_
-> * _make brain-prime_
+* _Clone repository_:
+> $ git clone https://github.com/alex-p14/php-project-45.git 
+* _Go to directory_:
+> $ cd php-project-45
+* _Install package_:
+> $ composer install
+* _Run game_:
+> $ make brain-even
+> $ make brain-calc
+> $ make brain-gcd
+> $ make brain-progression
+> $ make brain-prime
 
 ### *Asciinema:*
 * _brain-even_:
