@@ -14,7 +14,7 @@ function runGame($description, $getQuestionAnswer)
     $amountRounds = 3;
     for ($i = 0; $i < $amountRounds; $i++) {
         [$question, $rAns] = $getQuestionAnswer();
-        line("Quwstion: %s", $question);
+        line("Question: %s", $question);
         $ans = prompt('Your answer');
         if ($ans != $rAns) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $ans, $rAns);
