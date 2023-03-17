@@ -23,5 +23,5 @@ function runGame($description, $getQuestionAnswer)
         }
         line('Correct!');
     }
-    line("Congratilations, %s!", $name);
+    line("Congratulations, %s!", $name);
 }
