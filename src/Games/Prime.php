@@ -9,7 +9,7 @@ function getDescription()
     };
 }
 
-function isPrime($num)
+function isPrime(int $num)
 {
     $halfNum = intdiv($num, 2);
     for ($i = 2; $i <= $halfNum; $i++) {
