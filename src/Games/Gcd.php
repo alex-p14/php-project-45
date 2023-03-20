@@ -9,7 +9,7 @@ function getDescription()
     };
 }
 
-function getGcd($maxNum, $minNum)
+function getGcd(int $maxNum, int $minNum)
 {
     $remDivision = $maxNum % $minNum;
     return $remDivision === 0 ? $minNum : getGcd($minNum, $remDivision);
