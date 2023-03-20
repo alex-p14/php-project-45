@@ -17,6 +17,7 @@ function getQuestionAnswer()
             '+' => $firstNum + $secondNum,
             '-' => $firstNum - $secondNum,
             '*' => $firstNum * $secondNum,
+            default => null,
         };
         $question = $firstNum . ' ' . $operator . ' ' . $secondNum;
         return [$question, $answer];
