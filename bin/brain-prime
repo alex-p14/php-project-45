@@ -17,4 +17,9 @@ use function Brain\Games\Engine\runGame;
 use function Brain\Games\Games\Prime\getDescription;
 use function Brain\Games\Games\Prime\getQuestionAnswer;
 
-runGame(getDescription(), getQuestionAnswer());
+function main()
+{
+    runGame(getDescription(), getQuestionAnswer());
+}
+
+main();
