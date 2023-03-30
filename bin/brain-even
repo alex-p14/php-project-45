@@ -17,4 +17,9 @@ use function Brain\Games\Engine\runGame;
 use function Brain\Games\Games\Even\getDescription;
 use function Brain\Games\Games\Even\getQuestionAnswer;
 
-runGame(getDescription(), getQuestionAnswer());
+function main()
+{
+    runGame(getDescription(), getQuestionAnswer());
+}
+
+main();
