@@ -15,4 +15,9 @@ if (file_exists($autoloadPath1)) {
 
 use function Brain\Games\Cli\welcomeUser; 
 
-welcomeUser();
+function main()
+{
+    welcomeUser();
+}
+
+main();
