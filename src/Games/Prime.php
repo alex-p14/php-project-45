@@ -9,13 +9,16 @@ function getDescription()
 
 function isPrime(int $num)
 {
+    if ($num === 1) {
+        return false;
+    }
     $halfNum = intdiv($num, 2);
     for ($i = 2; $i <= $halfNum; $i++) {
         if ($num % $i === 0) {
             return false;
         }
     }
-    return $num === 1 ? false : true;
+    return true;
 }
 
 function getQuestionAnswer()
