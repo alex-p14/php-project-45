@@ -15,15 +15,10 @@ function getQuestionAnswer()
         $hiddenNum = mt_rand(1, 10);
         $amountNum = 10;
         $question = [];
-        $answer = null;
         for ($i = 1; $i <= $amountNum; $i++) {
-            if ($i != $hiddenNum) {
-                $question[] = $startNum + $step * $i;
-            } else {
-                $question[] = '..';
-                $answer = $startNum + $step * $i;
-            }
+            $question[] = $i != $hiddenNum ? $startNum + $step * $i : '..';
         }
+        $answer = $startNum + $step * $hiddenNum;
         $question = implode(' ', $question);
         return [$question, $answer];
     };
