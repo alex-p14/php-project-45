@@ -17,7 +17,7 @@ function getQuestionAnswer()
             '+' => $firstNum + $secondNum,
             '-' => $firstNum - $secondNum,
             '*' => $firstNum * $secondNum,
-            default => null,
+            default => throw new \Exception("Неизвестный оператор"),
         };
         $question = $firstNum . ' ' . $operator . ' ' . $secondNum;
         return [$question, $answer];
