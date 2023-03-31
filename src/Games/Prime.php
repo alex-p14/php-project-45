@@ -4,9 +4,7 @@ namespace Brain\Games\Games\Prime;
 
 function getDescription()
 {
-    return function () {
-        return 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    };
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".';
 }
 
 function isPrime(int $num)

@@ -4,9 +4,7 @@ namespace Brain\Games\Games\Gcd;
 
 function getDescription()
 {
-    return function () {
-        return 'Find the greatest common divisor of given numbers.';
-    };
+    return 'Find the greatest common divisor of given numbers.';
 }
 
 function getGcd(int $maxNum, int $minNum)

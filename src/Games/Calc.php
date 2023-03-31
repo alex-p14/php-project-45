@@ -4,7 +4,7 @@ namespace Brain\Games\Games\Calc;
 
 function getDescription()
 {
-    return fn() => 'What is the result of the expression?';
+    return 'What is the result of the expression?';
 }
 
 function getQuestionAnswer()
