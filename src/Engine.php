@@ -3,6 +3,7 @@
 namespace Brain\Games\Engine;
 
 use function cli\line;
+use function cli\out;
 use function cli\prompt;
 
 function runGame(string $description, callable $getQuestionAnswer)
@@ -13,11 +14,12 @@ function runGame(string $description, callable $getQuestionAnswer)
     line($description);
     $amountRounds = 3;
     for ($i = 0; $i < $amountRounds; $i++) {
-        [$question, $rAns] = $getQuestionAnswer();
+        [$question, $rightAnswer] = $getQuestionAnswer();
         line("Question: %s", $question);
-        $ans = prompt('Your answer');
-        if ($ans != $rAns) {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $ans, $rAns);
+        $answer = prompt('Your answer');
+        if ($answer != $rightAnswer) {
+            out("'%s' is wrong answer ;(. ", $answer);
+            line("Correct answer was '%s'.", $rightAnswer);
             line("Let's try again, %s!", $name);
             return;
         }
