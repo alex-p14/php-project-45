@@ -16,8 +16,9 @@ function getQuestionAnswer()
         $amountNum = 10;
         $question = [];
         for ($i = 1; $i <= $amountNum; $i++) {
-            $question[] = $i != $hiddenNum ? $startNum + $step * $i : '..';
+            $question[] = $startNum + $step * $i;
         }
+        $question[$hiddenNum - 1] = '..';
         $answer = $startNum + $step * $hiddenNum;
         $question = implode(' ', $question);
         return [$question, $answer];
