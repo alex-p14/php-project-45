@@ -2,10 +2,7 @@
 
 namespace Brain\Games\Games\Progression;
 
-function getDescription()
-{
-    return 'What number is missing in the progression?';
-}
+const DESCRIPTION = 'What number is missing in the progression?';
 
 function getQuestionAnswer()
 {
