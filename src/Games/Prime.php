@@ -10,14 +10,21 @@ function isPrime(int $num)
 {
     if ($num === 1) {
         return false;
-    }
-    $halfNum = intdiv($num, 2);
-    for ($i = 2; $i <= $halfNum; $i++) {
-        if ($num % $i === 0) {
+    } elseif ($num === 2) {
+        return true;
+    } else {
+        if ($num % 2 === 0) {
             return false;
+        } else {
+            $halfNum = intdiv($num, 2);
+            for ($i = 3; $i <= $halfNum; $i += 2) {
+                if ($num % $i === 0) {
+                    return false;
+                }
+            }
+            return true;
         }
     }
-    return true;
 }
 
 function getQuestionAnswer()
