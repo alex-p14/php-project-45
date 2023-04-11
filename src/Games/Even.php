@@ -1,11 +1,10 @@
 <?php
 
-namespace Brain\Games\Games\Even;
+namespace BrainGames\Games\Even;
 
-function getDescription()
-{
-    return 'Answer "yes" if the number is even, otherwise answer "no".';
-}
+use function BrainGames\Engine\runGame;
+
+const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function getQuestionAnswer()
 {
@@ -14,4 +13,9 @@ function getQuestionAnswer()
         $answer = $question % 2 === 0 ? 'yes' : 'no';
         return [$question, $answer];
     };
+}
+
+function start()
+{
+    runGame(DESCRIPTION, getQuestionAnswer());
 }

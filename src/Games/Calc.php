@@ -1,11 +1,10 @@
 <?php
 
-namespace Brain\Games\Games\Calc;
+namespace BrainGames\Games\Calc;
 
-function getDescription()
-{
-    return 'What is the result of the expression?';
-}
+use function BrainGames\Engine\runGame;
+
+const DESCRIPTION = 'What is the result of the expression?';
 
 function getQuestionAnswer()
 {
@@ -22,4 +21,9 @@ function getQuestionAnswer()
         $question = $firstNum . ' ' . $operator . ' ' . $secondNum;
         return [$question, $answer];
     };
+}
+
+function start()
+{
+    runGame(DESCRIPTION, getQuestionAnswer());
 }

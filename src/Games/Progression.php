@@ -1,6 +1,8 @@
 <?php
 
-namespace Brain\Games\Games\Progression;
+namespace BrainGames\Games\Progression;
+
+use function BrainGames\Engine\runGame;
 
 const DESCRIPTION = 'What number is missing in the progression?';
 
@@ -20,4 +22,9 @@ function getQuestionAnswer()
         $question = implode(' ', $question);
         return [$question, $answer];
     };
+}
+
+function start()
+{
+    runGame(DESCRIPTION, getQuestionAnswer());
 }

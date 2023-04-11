@@ -1,11 +1,10 @@
 <?php
 
-namespace Brain\Games\Games\Prime;
+namespace BrainGames\Games\Prime;
 
-function getDescription()
-{
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".';
-}
+use function BrainGames\Engine\runGame;
+
+const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function isPrime(int $num)
 {
@@ -28,4 +27,9 @@ function getQuestionAnswer()
         $answer = isPrime($question) ? 'yes' : 'no';
         return [$question, $answer];
     };
+}
+
+function start()
+{
+    runGame(DESCRIPTION, getQuestionAnswer());
 }
