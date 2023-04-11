@@ -13,13 +13,6 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use Brain\Games\Games\Progression;
-use function Brain\Games\Engine\runGame;
-use function Brain\Games\Games\Progression\getQuestionAnswer;
+use function BrainGames\Games\Progression\start;
 
-function main()
-{
-    runGame(Progression\DESCRIPTION, getQuestionAnswer());
-}
-
-main();
+start();

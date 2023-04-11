@@ -13,11 +13,6 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Brain\Games\Cli\welcomeUser; 
+use function BrainGames\Cli\start;
 
-function main()
-{
-    welcomeUser();
-}
-
-main();
+start();
